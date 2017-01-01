@@ -1,0 +1,128 @@
+# non-dot files
+/[^.]*
+!/bin
+
+# Don't include files with sensitive data
+/.zshrc-secrets
+
+# iJunk
+.MacOSX
+.Trash
+
+# ZSH junk
+/.zcompdump*
+/.zsh-update
+
+# Python virtual envs
+/.virtualenvs
+
+# Ruby virtual envs
+/.rvm
+
+# History files
+/.*history
+
+# Dotfiles
+/*Drobo*
+/.*-dropbox-token
+/.ackrc
+/.adobe
+/.alvzfmtrc
+/.android
+/.appcfg_cookies
+/.appcfg_nag
+/.ascii.io
+/.autoenv
+/.autoenv_authorized
+/.autoenv_authorized.tmp
+/.belastingdienst.nl
+/.bi_li3
+/.bower
+/.bup
+/.bzr.log
+/.cache
+/.cargo
+/.cassandra
+/.CFUserTextEncoding
+/.chef
+/.config
+/.cookiecutters
+/.cups
+/.dbshell
+/.devpi
+/.direnvrc
+/.dropbox
+/.dropbox-master
+/.dvdcss
+/.eaglerc
+/.emacs.d
+/.fontconfig
+/.ftcurlish.json
+/.gem
+/.gh-credentials
+/.gist
+/.gist-vim
+/.gitconfig
+/.gitk
+/.gnupg
+/.grc
+/.heroku
+/.httpie
+/.ipython
+/.irssi
+/.js
+/.keybase-installer
+/.lein
+/.lesshst
+/.local
+/.m2
+/.matplotlib
+/.mitmproxy
+/.mongorc.js
+/.msgsrc
+/.netrc
+/.njxnqxgn
+/.npm
+/.oh-my-zsh
+/.parallel
+/.pip
+/.pip-accel
+/.pip-tools
+/.profile
+/.pylint.d
+/.pypirc
+/.python-eggs
+/.pythonhist
+/.pythonrc.py
+/.pythonz
+/.resty
+/.ri
+/.rnd
+/.s3cfg
+/.srl
+/.ssh
+/.subversion
+/.tmux.conf
+/.tox
+/.ttytterkey
+/.vagrant.d
+/.vim*
+/.Xauthority
+/.XcodeDefaultPerspective.mode1v3
+/.yesgraph-*
+/.z*
+
+# Directories
+Projects
+
+# Vim generated documentation
+/doc/tags
+
+# Powerline-specific cruft that isn't ignored in their own plugin
+Powerline_*.cache
+
+# Postgres stuff
+/.pg*
+
+#Trash
+.DS_Store
