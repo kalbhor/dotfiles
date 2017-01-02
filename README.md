@@ -1,2 +1,2 @@
 # dotfiles
-All my dotfiles
+A very fancy zsh based terminal.
