@@ -7,7 +7,7 @@ export ZSH=/Users/lakshay/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="pure"
+ZSH_THEME="hyperzsh"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -87,16 +87,22 @@ source $ZSH/oh-my-zsh.sh
 alias workenv3="cd ~/Desktop/environments/python3; source bin/activate; cd ~/Desktop"
 alias workenv2="cd ~/Desktop/environments/python2; source bin/activate; cd ~/Desktop"
 alias pypi="python setup.py sdist upload"
-
+alias ..="cd .."
+alias c="clear"
+alias calc="bc"
+alias rm="rm -i"
 
 chrome () {
-	open -a "Google Chrome" "http://www.$1.com"
+	open -a "Google Chrome" "http://www.$1"
 }
 
 safari () {
-	open -a "Safari" "http://www.$1.com"
+	open -a "Safari" "http://www.$1"
 }
 
+explore () {
+	open $1
+}
 
 #Syntax highlighting
 

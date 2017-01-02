@@ -98,7 +98,8 @@ module.exports = {
     "hyperterm-paste",
     "hyperterm-cursor",
     "hyper-sierra",
-    "hyperterm-close-on-left"
+    "hyperterm-close-on-left",
+    "hyper-command-gifs"
   ],
 
   windowSize: [1000, 500],
