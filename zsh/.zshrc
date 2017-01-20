@@ -84,13 +84,24 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias workenv3="cd ~/Desktop/environments/python3; source bin/activate; cd ~/Desktop"
-alias workenv2="cd ~/Desktop/environments/python2; source bin/activate; cd ~/Desktop"
 alias pypi="python setup.py sdist upload"
 alias ..="cd .."
 alias c="clear"
 alias rm="rm -i"
 
+workenv3 () {
+    dir=$(pwd);
+    cd ~/Desktop/environments/python3;
+    source bin/activate;
+    cd $dir; 
+}
+
+workenv2 () {
+    dir=$(pwd);
+    cd ~/Desktop/environments/python2;
+    source bin/activate;
+    cd $dir; 
+}
 
 chrome () {
 	open -a "Google Chrome" "https://www.$1"
