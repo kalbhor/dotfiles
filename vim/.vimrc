@@ -8,6 +8,7 @@
 
     "Vundle Plugins [START]
         Plugin 'VundleVim/Vundle.vim'
+        Plugin 'tpope/vim-fugitive'
         Plugin 'tpope/vim-surround' 
         Plugin 'scrooloose/nerdtree'
         Plugin 'jeffkreeftmeijer/vim-numbertoggle'
