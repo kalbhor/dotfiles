@@ -1,1 +1,2 @@
-## Fast and Fancy
+## Dotfiles
+[My](lakshaykalbhor.github.io) configs. 
