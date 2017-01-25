@@ -4,6 +4,7 @@ export ZSH=/Users/lakshay/.oh-my-zsh
 # https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="spaceship"
 
+# Time period to update zsh
 export UPDATE_ZSH_DAYS=10
 
 COMPLETION_WAITING_DOTS="true"
@@ -15,6 +16,7 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
+# ~(0.0)~ ALIASES 
 alias pypi="python setup.py sdist upload"
 alias ..="cd .."
 alias c="clear"
