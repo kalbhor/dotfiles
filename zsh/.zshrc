@@ -19,6 +19,14 @@ source $ZSH/oh-my-zsh.sh
 # ~(0.0)~ ALIASES 
 alias pypi="python setup.py sdist upload"
 alias ..="cd .."
+alias ...="cd ../.."
+alias dr="cd ~/Dropbox"
+alias dl="cd ~/Downloads"
+alias dt="cd ~/Desktop"
+alias pj="cd ~/Projects"
+alias pjr="cd ~/Projects/_Repos"
+alias pjf="cd ~/Projects/_Forks"
+alias pjp="cd ~/Projects/_Playground/"
 alias c="clear"
 alias rm="rm -i"
 alias myip="curl icanhazip.com"
@@ -55,5 +63,5 @@ safari () {
 
 
 # Syntax highlighting
-source /Users/lakshay/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /Users/lakshay/Desktop/Executables/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
