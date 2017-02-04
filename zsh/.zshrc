@@ -17,6 +17,7 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # ~(0.0)~ ALIASES 
+alias songs="cd ~/Desktop/Music"
 alias pypi="python setup.py sdist upload"
 alias ..="cd .."
 alias ...="cd ../.."
@@ -54,11 +55,11 @@ workenv2 () {
 
 # Open browsers
 chrome () {
-	open -a "Google Chrome" "https://www.$1"
+	open -a "Google Chrome" "https://$1"
 }
 
 safari () {
-	open -a "Safari" "https://www.$1"
+	open -a "Safari" "https://$1"
 }
 
 
