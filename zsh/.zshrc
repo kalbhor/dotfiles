@@ -38,7 +38,7 @@ alias wisdom="fortune | cowsay"
 # Get weather info
 weather(){ curl wttr.in/"$1"; }
 
-# Python work environments
+# Python 3 work environments
 workenv3 () {
     dir=$(pwd);
     cd ~/Desktop/environments/python3;
@@ -46,6 +46,7 @@ workenv3 () {
     cd $dir; 
 }
 
+# Python 2 work environments
 workenv2 () {
     dir=$(pwd);
     cd ~/Desktop/environments/python2;
