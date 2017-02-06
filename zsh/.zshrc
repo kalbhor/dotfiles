@@ -67,3 +67,4 @@ safari () {
 # Syntax highlighting
 source /Users/lakshay/Desktop/Executables/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+SPACESHIP_TIME_SHOW=true
