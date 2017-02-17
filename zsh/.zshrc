@@ -17,6 +17,7 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # ~(0.0)~ ALIASES 
+alias rmds="find . -name .DS_Store -print0 | xargs -0 git rm --ignore-unmatch"
 alias songs="cd ~/Desktop/Music"
 alias pypi="python setup.py sdist upload"
 alias ..="cd .."
