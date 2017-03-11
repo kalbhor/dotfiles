@@ -2,7 +2,7 @@
 export ZSH=/Users/lakshay/.oh-my-zsh
 
 # https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="spaceship"
+ZSH_THEME="pure"
 
 # Time period to update zsh
 export UPDATE_ZSH_DAYS=10
@@ -18,7 +18,7 @@ source $ZSH/oh-my-zsh.sh
 
 # ~(0.0)~ ALIASES 
 alias rmds="find . -name .DS_Store -print0 | xargs -0 git rm --ignore-unmatch"
-alias songs="cd ~/Desktop/Music"
+alias songs="cd ~/Documents/Music"
 alias pypi="python setup.py sdist upload"
 alias ..="cd .."
 alias ...="cd ../.."
@@ -42,7 +42,7 @@ weather(){ curl wttr.in/"$1"; }
 # Python 3 work environments
 workenv3 () {
     dir=$(pwd);
-    cd ~/Desktop/environments/python3;
+    cd ~/Documents/environments/python3;
     source bin/activate;
     cd $dir; 
 }
@@ -50,7 +50,7 @@ workenv3 () {
 # Python 2 work environments
 workenv2 () {
     dir=$(pwd);
-    cd ~/Desktop/environments/python2;
+    cd ~/Documents/environments/python2;
     source bin/activate;
     cd $dir; 
 }
@@ -66,6 +66,6 @@ safari () {
 
 
 # Syntax highlighting
-source /Users/lakshay/Desktop/Executables/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /Users/lakshay/Documents/Executables/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 SPACESHIP_TIME_SHOW=true
