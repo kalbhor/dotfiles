@@ -37,6 +37,9 @@
 " enable syntax highlighting
     syntax enable
 
+" mapleader
+    let mapleader=","
+
 " set tabs to have 4 spaces
     set ts=4
 
@@ -57,3 +60,8 @@
 
 "Toggle copy pasting
     set pastetoggle=<F2>
+
+"Python
+nmap ,p :w<CR>:!python3 %<CR>
+
+
