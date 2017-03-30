@@ -17,6 +17,7 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # ~(0.0)~ ALIASES 
+alias lsd="tree -L 1"
 alias rmds="find . -name .DS_Store -print0 | xargs -0 git rm --ignore-unmatch"
 alias songs="cd ~/Documents/Music"
 alias pypi="python setup.py sdist upload"
@@ -69,3 +70,4 @@ safari () {
 source /Users/lakshay/Documents/Executables/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 SPACESHIP_TIME_SHOW=true
+
