@@ -1,2 +1,2 @@
 ## Dotfiles
-[My](lakshaykalbhor.github.io) configs. 
+[My](kalbhor.github.io) configs. 
