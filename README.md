@@ -4,4 +4,4 @@
 #### Vim 
 ![vim](vimview.png)
 
-Awesome vim color schemes available [here](https://colorswat.ch/vim)
+Awesome vim color schemes available [here](http://colorswat.ch/vim)
