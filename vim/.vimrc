@@ -1,67 +1,86 @@
 "VUNDLE [START]
-    set nocompatible          
-    filetype off             
+set nocompatible          
+filetype off             
 
-    " set the runtime path to include Vundle and initialize
-    set rtp+=~/.vim/bundle/Vundle.vim
-    call vundle#begin()
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-    "Vundle Plugins [START]
-        Plugin 'VundleVim/Vundle.vim'
-        Plugin 'tpope/vim-fugitive'
-        Plugin 'tpope/vim-surround' 
-        Plugin 'scrooloose/nerdtree'
-        Plugin 'jeffkreeftmeijer/vim-numbertoggle'
-    "Vundle Plugins [END]
+"Vundle Plugins [START]
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-surround' 
+Plugin 'scrooloose/nerdtree'
+Plugin 'jeffkreeftmeijer/vim-numbertoggle'
+Plugin 'vim-syntastic/syntastic'
+Plugin 'vim-airline/vim-airline'
+Plugin 'sjl/badwolf'
+Plugin 'sjl/gundo.vim'
+"Vundle Plugins [END]
 
-    call vundle#end()  
-    filetype plugin indent on
+call vundle#end()  
+filetype plugin indent on
 "VUNDLE [END]
 
-"~(o.o)~ 
-
 "NERDTree [START]
-    autocmd StdinReadPre * let s:std_in=1
+autocmd StdinReadPre * let s:std_in=1
 
-    autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
-    map <C-n> :NERDTreeToggle<CR>
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
+map <C-n> :NERDTreeToggle<CR>
 "NERDTree [END]
 
 "NumberToggle [START]
-    let g:NumberToggleTrigger="<F1>"
+let g:NumberToggleTrigger="<F1>"
 "NumberToggle[END]
 
-"~(o.o)~
+colorscheme badwolf " fav <3 
 
+syntax enable " duh
 
-" enable syntax highlighting
-    syntax enable
+set tabstop=4 " number of visual spaces per TAB
 
-" mapleader
-    let mapleader=","
+set softtabstop=4 " number of spaces in tab when editing
 
-" set tabs to have 4 spaces
-    set ts=4
+set expandtab " tabs are spaces
 
-" indent when moving to the next line while writing code
-    set autoindent
+set number " show line numbers
 
-" expand tabs into spaces
-    set expandtab
+set showcmd " show command in bottom bar
 
-" when using the >> or << commands, shift lines by 4 spaces
-    set shiftwidth=4
+set cursorline " highlight current line
 
-" show a visual line under the cursor's current line
-    set cursorline
+filetype indent on " load filetype-specific indent
 
-" show the matching part of the pair for [] {} and ()
-    set showmatch
+set wildmenu
 
-"Toggle copy pasting
-    set pastetoggle=<F2>
+set lazyredraw
+
+set showmatch
+
+set incsearch
+set hlsearch
+
+let mapleader=","
+
+nnoremap <leader><space> :nohlsearch<CR>
+
+nnoremap j gj
+nnoremap k gk
+
+" move to beginning/end of line
+nnoremap B ^
+nnoremap E $
+
+" highlight last inserted text
+nnoremap gV `[v`]
+
+nnoremap <leader>u :GundoToggle<CR>
 
 "Python
 nmap ,p :w<CR>:!python3 %<CR>
 
+"C++
+nmap ,c :w<CR>:!make %<CR>
 
+"Toggle copy pasting
+set pastetoggle=<F2>
