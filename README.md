@@ -1,5 +1,5 @@
 ## Dotfiles
-[My](kalbhor.github.io) configs. 
+[My](kalbhor.xyz) configs. 
 
 #### Vim 
 ![vim](vimview.png)
